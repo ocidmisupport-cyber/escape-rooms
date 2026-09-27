@@ -21,7 +21,7 @@ function stage(key) {
     if(b.dataset.answer==='good') {
       localStorage.setItem('escape-'+key,x.digit);
       result.className='result good';
-      result.innerHTML=`Goed opgelost! Je verdient code-cijfer <strong class="digit">${x.digit}</strong><br><a class="button primary" href="${x.next}">Verder naar de volgende melding →</a>`;
+     result.innerHTML=`Goed opgelost! Onthoud je beloning goed.<br><a class="button primary" href="${x.next}">Verder naar de volgende melding →</a>`;
     } else { result.className='result bad'; result.textContent='Nog niet. Denk aan een veilige, logische eerste stap die een helpdeskmedewerker echt zou nemen.'; }
   }));
 }
